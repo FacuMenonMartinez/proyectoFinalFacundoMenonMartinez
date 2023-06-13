@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap");
+body {
+  background-color: #f5f1ed;
+  font-family: "Rubik", sans-serif !important; }
+
+.bg-body-tertiary {
+  background-color: #dad2bc !important; }
+
+.textoMenu {
+  color: #252323 !important; }
+
+.logo {
+  width: 50px;
+  height: 50px; }
+
+.bi {
+  color: #252323;
+  width: 30px;
+  height: 30px;
+  margin-right: 3vw; }
+
+.encabezado {
+  margin-top: 3vh;
+  display: flex;
+  justify-content: space-around;
+  max-width: 100vw; }
+  .encabezado .imgEncabezado {
+    max-width: 35vw;
+    border-radius: 5vw; }
+  .encabezado h1 {
+    text-align: center;
+    font-size: 4rem; }
+  .encabezado h2 {
+    font-size: 3rem; }
+
+.productosNovedades {
+  margin: auto;
+  margin-top: 3vh;
+  margin-bottom: 3vh;
+  max-width: 95vw;
+  background-color: #a99985;
+  border-radius: 1vw;
+  box-shadow: 0 0 5px #252323;
+  display: flex;
+  justify-content: space-around;
+  padding-top: 3vh;
+  padding-bottom: 3vh; }
+
+.tarjeta {
+  background-color: #dad2bc;
+  color: #252323;
+  min-width: 20vw;
+  border-radius: 2vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .tarjeta .imgLibro {
+    margin-top: 1.5vh;
+    max-height: 25vh;
+    border-radius: 1vw;
+    border: 2px solid #252323; }
+  .tarjeta h4 {
+    margin-top: 2vh;
+    font-size: 2rem; }
+  .tarjeta b {
+    font-size: 1.5rem; }
+  .tarjeta .botonesTarjeta {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5vh;
+    margin-bottom: 2vh; }
+    .tarjeta .botonesTarjeta button {
+      background-color: #a99985;
+      font-weight: bold;
+      color: #252323;
+      border-radius: 2vw;
+      border: none;
+      box-shadow: 0px 0px 5px #252323; }
+
+footer {
+  background-color: #252323;
+  color: #f5f1ed;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1vh;
+  padding-bottom: 2vh; }
+  footer .footerIzq {
+    margin-left: 1vw; }
+    footer .footerIzq h4 {
+      font-size: 1.5rem; }
+    footer .footerIzq h5 {
+      font-size: 1.5rem;
+      border-top: 1px solid #f5f1ed; }
+  footer .redes h5 {
+    text-align: center;
+    padding-right: 1vw;
+    font-size: 1.5rem; }
+  footer .redes .imgRedes {
+    width: 3.5vw;
+    margin-right: 1vw; }
