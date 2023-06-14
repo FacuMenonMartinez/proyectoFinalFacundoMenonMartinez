@@ -49,8 +49,9 @@ body {
 .tarjeta {
   background-color: #dad2bc;
   color: #252323;
-  min-width: 20vw;
+  width: 15vw;
   border-radius: 2vw;
+  box-shadow: 0px 0px 5px #70798c;
   display: flex;
   flex-direction: column;
   align-items: center; }
@@ -61,11 +62,13 @@ body {
     border: 2px solid #252323; }
   .tarjeta h4 {
     margin-top: 2vh;
-    font-size: 2rem; }
+    text-align: center;
+    font-size: 1rem;
+    min-height: 7vh; }
   .tarjeta b {
     font-size: 1.5rem; }
   .tarjeta .botonesTarjeta {
-    width: 100%;
+    width: 95%;
     display: flex;
     justify-content: space-around;
     margin-top: 5vh;
@@ -73,6 +76,7 @@ body {
     .tarjeta .botonesTarjeta button {
       background-color: #a99985;
       font-weight: bold;
+      font-size: 0.7rem;
       color: #252323;
       border-radius: 2vw;
       border: none;

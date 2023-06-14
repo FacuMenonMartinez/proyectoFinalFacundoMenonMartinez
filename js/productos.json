@@ -1,0 +1,82 @@
+[ 
+    {
+        "id": 1,
+        "nombre": "La isla del tesoro",
+        "autor": "Robert Stevenson",
+        "genero": "Clasico",
+        "precio": 1500,
+        "img": "../recursos/libros/islaTesoro.jpg"
+    },
+    {
+        "id": 2,
+        "nombre": "Oliver Twist y Cancion de Navidad",
+        "autor": "Charles Dickens",
+        "genero": "Clasico",
+        "precio": 1500,
+        "img": "../recursos/libros/oliverTwist.jpg"
+    },
+    {
+        "id": 3,
+        "nombre": "Cien años de soledad",
+        "autor": "Gabriel Garcia Marquez",
+        "genero": "Clasico",
+        "precio": 1500,
+        "img": "../recursos/libros/cienAños.jpeg"
+    },
+    {
+        "id": 4,
+        "nombre": "El extraño caso de Dr.Jekyll & Mr.Hyde",
+        "autor": "Robert Stevenson",
+        "genero": "Clasico",
+        "precio": 1500,
+        "img": "../recursos/libros/drJekyll.jpg"
+    },
+    {
+        "id": 5,
+        "nombre": "Mr. Mercedes",
+        "autor": "Stephen King",
+        "genero": "Suspenso",
+        "precio": 2500,
+        "img": "../recursos/libros/mrMercedes.jpeg"
+    },
+    {
+        "id": 6,
+        "nombre": "Misery",
+        "autor": "Stephen King",
+        "genero": "Suspenso",
+        "precio": 1500,
+        "img": "../recursos/libros/misery.jpeg"
+    },
+    {
+        "id": 7,
+        "nombre": "El resplandor",
+        "autor": "Stephen King",
+        "genero": "Terror",
+        "precio": 3500,
+        "img": "../recursos/libros/resplandor.jpeg"
+    },
+    {
+        "id": 8,
+        "nombre": "Frankenstein",
+        "autor": "Mary Shelley",
+        "genero": "Clasico",
+        "precio": 1500,
+        "img": "../recursos/libros/frankenstein.jpg"
+    },
+    {
+        "id": 9,
+        "nombre": "Harry Potter y el Prisionero de Azkaban",
+        "autor": "J.K Rowling",
+        "genero": "Fantasia",
+        "precio": 2500,
+        "img": "../recursos/libros/harryPotterPrisionero.jpg"
+    },
+    {
+        "id": 10,
+        "nombre": "Harry Potter y la Orden del Fenix",
+        "autor": "J.K Rowling",
+        "genero": "Fantasia",
+        "precio": 2500,
+        "img": "../recursos/libros/harryPotterFenix.jpg"
+    }
+]

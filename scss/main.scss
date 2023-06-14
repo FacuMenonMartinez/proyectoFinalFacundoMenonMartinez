@@ -66,8 +66,9 @@ body{
 .tarjeta{
     background-color: $marron-claro;
     color: $negro;
-    min-width: 20vw;
+    width: 15vw;
     border-radius: 2vw;
+    box-shadow: 0px 0px 5px $gris;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -79,13 +80,15 @@ body{
     }
     h4{
         margin-top: 2vh;
-        font-size: 2rem;
+        text-align: center;
+        font-size: 1rem;
+        min-height: 7vh;
     }
     b{
         font-size: 1.5rem;
     }
     .botonesTarjeta{
-        width: 100%;
+        width: 95%;
         display: flex;
         justify-content: space-around;
         margin-top: 5vh;
@@ -93,6 +96,7 @@ body{
         button{
             background-color: $marron-oscuro;
             font-weight: bold;
+            font-size: 0.7rem;
             color: $negro;
             border-radius: 2vw;
             border: none;
