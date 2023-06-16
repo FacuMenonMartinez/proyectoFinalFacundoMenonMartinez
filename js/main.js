@@ -18,7 +18,7 @@ fetch(`./js/productos.json`)
                 tarjeta.className ="tarjeta"
                 tarjeta.innerHTML = `
                         <img class="imgLibro" src="${novedad.img}"
-                            alt="">
+                            alt="Imagen de portada de ${novedad.nombre}">
                         <h4>${novedad.nombre}</h4>
                         <b>$${novedad.precio}</b>
                         <div class="botonesTarjeta">
@@ -32,9 +32,6 @@ fetch(`./js/productos.json`)
         botonAgregarCarrito.addEventListener("click",()=>{agregarCarrito (productos, novedad.id)});
             }else{
             };
-
-
-
         })
         
     });
