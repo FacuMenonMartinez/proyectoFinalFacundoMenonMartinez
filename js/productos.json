@@ -5,7 +5,8 @@
         "autor": "Robert Stevenson",
         "genero": "Clasico",
         "precio": 1500,
-        "img": "../recursos/libros/islaTesoro.jpg"
+        "img": "../recursos/libros/islaTesoro.jpg",
+        "descripcion":""
     },
     {
         "id": 2,
@@ -13,7 +14,8 @@
         "autor": "Charles Dickens",
         "genero": "Clasico",
         "precio": 1500,
-        "img": "../recursos/libros/oliverTwist.jpg"
+        "img": "../recursos/libros/oliverTwist.jpg",
+        "descripcion":""
     },
     {
         "id": 3,
@@ -21,7 +23,8 @@
         "autor": "Gabriel Garcia Marquez",
         "genero": "Clasico",
         "precio": 1500,
-        "img": "../recursos/libros/cienAños.jpeg"
+        "img": "../recursos/libros/cienAños.jpeg",
+        "descripcion":""
     },
     {
         "id": 4,
@@ -29,7 +32,9 @@
         "autor": "Robert Stevenson",
         "genero": "Clasico",
         "precio": 1500,
-        "img": "../recursos/libros/drJekyll.jpg"
+        "img": "../recursos/libros/drJekyll.jpg",
+        "descripcion":""
+        
     },
     {
         "id": 5,
@@ -37,7 +42,8 @@
         "autor": "Mary Shelley",
         "genero": "Clasico",
         "precio": 1500,
-        "img": "../recursos/libros/frankenstein.jpg"
+        "img": "../recursos/libros/frankenstein.jpg",
+        "descripcion":""
     },
     {
         "id": 6,
@@ -45,7 +51,8 @@
         "autor": "Stephen King",
         "genero": "Suspenso",
         "precio": 1500,
-        "img": "../recursos/libros/misery.jpeg"
+        "img": "../recursos/libros/misery.jpeg",
+        "descripcion":""
     },
     {
         "id": 7,
@@ -53,7 +60,8 @@
         "autor": "Stephen King",
         "genero": "Terror",
         "precio": 3500,
-        "img": "../recursos/libros/resplandor.jpeg"
+        "img": "../recursos/libros/resplandor.jpeg",
+        "descripcion":""
     },
     {
         "id": 8,
@@ -61,7 +69,8 @@
         "autor": "Stephen King",
         "genero": "Suspenso",
         "precio": 2500,
-        "img": "../recursos/libros/mrMercedes.jpeg"
+        "img": "../recursos/libros/mrMercedes.jpeg",
+        "descripcion":""
     },
     {
         "id": 9,
@@ -69,7 +78,8 @@
         "autor": "J.K Rowling",
         "genero": "Fantasia",
         "precio": 2500,
-        "img": "../recursos/libros/harryPotterPrisionero.jpg"
+        "img": "../recursos/libros/harryPotterPrisionero.jpg",
+        "descripcion":""
     },
     {
         "id": 10,
@@ -77,6 +87,7 @@
         "autor": "J.K Rowling",
         "genero": "Fantasia",
         "precio": 2500,
-        "img": "../recursos/libros/harryPotterFenix.jpg"
+        "img": "../recursos/libros/harryPotterFenix.jpg",
+        "descripcion":""
     }
 ]

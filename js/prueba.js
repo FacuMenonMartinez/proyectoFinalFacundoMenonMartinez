@@ -105,12 +105,53 @@
 // })
 
 // Prueba cambiar titulo a pestaña
-let boton =document.getElementById("boton");
+// let boton =document.getElementById("boton");
 
-function cambiar() {
-    let nuevoTitulo = "Titulo Nuevo"
-    document.title = nuevoTitulo;
-    console.log("titulo cambiado");
-}
+// function cambiar() {
+//     let nuevoTitulo = "Titulo Nuevo"
+//     document.title = nuevoTitulo;
+//     console.log("titulo cambiado");
+// }
 
-boton.addEventListener("click", cambiar);
+
+// boton.addEventListener("click", cambiar);
+
+// Renderizacion de libros en su propio html
+let contenedorLibros = document.getElementById("contenedorProductos");
+
+// Traigo los productos del JSON y los muestro como en el main del inicio
+fetch(`./productos.json`)
+    .then((response) => response.json())
+    .then((libros) => {
+        libros.forEach(producto => {
+            let tarjeta = document.createElement("div");
+            tarjeta.className = "tarjeta producto"
+            tarjeta.innerHTML = `
+                        <img class="imgLibro" src="${producto.img}"
+                            alt="Imagen de portada de ${producto.nombre}">
+                        <h4>${producto.nombre}</h4>
+                        <b>$${producto.precio}</b>
+                        <div class="botonesTarjeta">
+                        <button id="verMas${producto.id}">Ver más</button>
+                            <button id="agregarCarrito${producto.id}">Agregar al carrito</button>
+                        </div>
+            `
+            contenedorLibros.append(tarjeta);
+            let botonVerMas = document.getElementById(`verMas${producto.id}`);
+            botonVerMas.addEventListener("click",()=>{verMas(producto.nombre,producto.id,producto.precio, producto.img)});
+        })
+    })
+
+    function verMas(titulo,descripcion,precio,portada){
+        Swal.fire({
+            title: titulo,
+            text: descripcion,
+            text: precio,
+            imageUrl: portada,
+            confirmButtonText: 'Agregar al carrito',
+            imageWidth: 200,
+            imageHeight: 300,
+            imageAlt: 'Custom image',
+            input:'button'
+          })
+    }

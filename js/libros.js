@@ -7,7 +7,7 @@ fetch(`../js/productos.json`)
     .then((libros) => {
         libros.forEach(producto => {
             let tarjeta = document.createElement("div");
-            tarjeta.className="tarjeta"
+            tarjeta.className="tarjeta producto"
             tarjeta.innerHTML = `
                         <img class="imgLibro" src="${producto.img}"
                             alt="Imagen de portada de ${producto.nombre}">
