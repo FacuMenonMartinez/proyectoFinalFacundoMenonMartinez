@@ -118,6 +118,7 @@
 
 // Renderizacion de libros en su propio html
 let contenedorLibros = document.getElementById("contenedorProductos");
+let carrito1 = [];
 
 // Traigo los productos del JSON y los muestro como en el main del inicio
 fetch(`./productos.json`)
@@ -138,20 +139,49 @@ fetch(`./productos.json`)
             `
             contenedorLibros.append(tarjeta);
             let botonVerMas = document.getElementById(`verMas${producto.id}`);
-            botonVerMas.addEventListener("click",()=>{verMas(producto.nombre,producto.id,producto.precio, producto.img)});
-        })
+            botonVerMas.addEventListener("click", () => { verMas(producto.nombre, producto.descripcion, producto.precio, producto.img, ) });
+            
+            let agregarCarritoProducto = document.getElementById(`agregarCarrito${producto.id}`);
+            agregarCarritoProducto.addEventListener("click", () => { agregarCarrito (libros, producto.id)} );
+        }) 
     })
 
-    function verMas(titulo,descripcion,precio,portada){
-        Swal.fire({
-            title: titulo,
-            text: descripcion,
-            text: precio,
-            imageUrl: portada,
-            confirmButtonText: 'Agregar al carrito',
-            imageWidth: 200,
-            imageHeight: 300,
-            imageAlt: 'Custom image',
-            input:'button'
-          })
-    }
+    // Funcion para evento del carrito
+const agregarCarrito = (producto, seleccionador) =>{
+    let libroSeleccionado = producto.find(item=>item.id===seleccionador);
+    carrito.push(libroSeleccionado);
+
+    sessionStorage.setItem("carrito", JSON.stringify(carrito));
+
+    console.log("Producto agregado al carrito");
+};
+
+// function verMas(titulo, descripcion, precio, portada,) {
+//         Swal.fire({
+//         //Elementos de la alerta 
+//         title: titulo,
+//         html: descripcion + '<br><br>' + '$' + precio,
+//         imageUrl: portada,
+//         showCloseButton: true,
+//         showConfirmButton: false,
+//         imageWidth: 200,
+//         imageHeight: 300,
+//         imageAlt: 'Imagen de portada de' + titulo,
+
+//         // Estilo de la alerta
+//         color: '#252323',
+//         background: 'F5F1ED'
+//     })
+// }
+
+const mantenerCarrito=()=>{
+    let carritoStorage = JSON.parse(sessionStorage.getItem("carrito"));
+// Recorro el storage en caso que haya y vuelvo a pushear los productos que ya estan al carrito
+// para que no se sobreescriba en caso que siga agregando productos
+ if(carritoStorage){
+    carritoStorage.forEach(item=>carrito.push(item));
+ }
+
+}
+
+mantenerCarrito();

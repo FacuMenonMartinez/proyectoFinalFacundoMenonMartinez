@@ -18,6 +18,14 @@
   margin-right: 0.2vw;
   margin-bottom: 5vh; }
 
+.tituloAlert {
+  color: #252323;
+  font-size: 1.5 rem; }
+
+.textoAlert {
+  color: #252323;
+  font-size: 0.5 rem; }
+
 body {
   background-color: #f5f1ed;
   font-family: "Rubik", sans-serif !important; }

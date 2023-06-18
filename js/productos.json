@@ -1,4 +1,4 @@
-[ 
+[
     {
         "id": 1,
         "nombre": "La isla del tesoro",
@@ -6,7 +6,7 @@
         "genero": "Clasico",
         "precio": 1500,
         "img": "../recursos/libros/islaTesoro.jpg",
-        "descripcion":""
+        "descripcion": "Un viejo pirata llega a la posada que atiende Jim Hawkins y su madre. Más o menos al mis tiempo muere el padre de Jim y el misterioso pirata, quien deja en un baúl el mapa de un tesoro escondido en una isla. Este hecho fue fundamental en la vida de Jim, ya que decidió hacerse a la mar junto a un controvertido grupo de marienros con el objetivo de encontrar el tesoro del misterioso mapa. El grupo vivirá incontables aventuras, entre ellas un motín a bordo que complica completamente los planes iniciales. El joven Jim deberá descubrir solo cuáles son las caras del bien y cuáles las del mal entre sus compañeros de viaje. Estas vivencias lo harán vivir el pasaje de la inocencia a la adultez a bordo de este barco que lo llevará a la isla del tesoro."
     },
     {
         "id": 2,
@@ -15,7 +15,7 @@
         "genero": "Clasico",
         "precio": 1500,
         "img": "../recursos/libros/oliverTwist.jpg",
-        "descripcion":""
+        "descripcion": "En febrero de 1837, Dickens publicó la primera entrega de Oliver Twist junto a una famosa revista. El relato aborda la cruda realidad de la época, narrando la sdesfracias de un pequeño huérfano que debió sortear los peligros del maltrato en hospicios y del trabajo par aricos indiferentes o ladrones que utilizaban niños para robar. Los críticos del momento consideraron que aquello no era lo que la gente querría leer. Sin embargo, la publicación fue un éxito en ventas. En 1843 publicó Canción de Navidad. El centro de la historia lo ocupa un personaje avaro, codicioso y cruel, que mediante viajes espectrales a través del tiempo llegó a reflexionar sobre sus propias miserias y pobreza espiritual"
     },
     {
         "id": 3,
@@ -24,7 +24,7 @@
         "genero": "Clasico",
         "precio": 1500,
         "img": "../recursos/libros/cienAños.jpeg",
-        "descripcion":""
+        "descripcion": "'Muchos años después, frente al pelotón de fusilamiento, el coronel Aureliano Buendía había de recordar aquella tarde remota en que su padre lo llevó a conocer el hielo'. Con estas palabras empieza una novela legendaria, una de las aventuras literarias más fascinantes del S.XX. La familia Buendía-Iguarán, con sus milagros, fantasías. obsesiones, tragedias, incestos, adulterios, rebeldías, descubrimientos y condenas, represental al mismo tiempo el mito y la historia, la tragedia y el amor del mundo entero."
     },
     {
         "id": 4,
@@ -33,8 +33,7 @@
         "genero": "Clasico",
         "precio": 1500,
         "img": "../recursos/libros/drJekyll.jpg",
-        "descripcion":""
-        
+        "descripcion": "Londres, invierno de 1884. Mr. Utterson, notario del doctor Jekyll, relee el testamento del científico:'Yo el firmante Henry Jekyll, deseo que a mi muerte todos mis bienes pasen a mi gran amigo y benefactor Edward Hyde'. Poco después, el señor Utterson descubre que el señor Hyde no sólo es una persona despreciable, sino un criminal. ¿Qué oscuro secreto, qué grave error de juventud obliga al intachable doctor Jekyll a nombrar a un asesino su principal benefactor? Esta memorable novela es una alegoría moral, un magistral relato de misterio que sucesivas generaciones de lectores han convertido en un clásico de la literatura universal."
     },
     {
         "id": 5,
@@ -43,7 +42,7 @@
         "genero": "Clasico",
         "precio": 1500,
         "img": "../recursos/libros/frankenstein.jpg",
-        "descripcion":""
+        "descripcion": "En 1816, Mary Shelley creó el que sería su personaje más famoso, el doctor Victor Frankenstein. La historia es bien conocida: un científico consigue dar vida a una criatura a la que luego rechaza. Metáfora sobre la vida, la libertad y el amor, Frankenstein o el moderno Prometeo es una maravillosa fábula con todos los ingredientes de los grandes mitos."
     },
     {
         "id": 6,
@@ -52,7 +51,7 @@
         "genero": "Suspenso",
         "precio": 1500,
         "img": "../recursos/libros/misery.jpeg",
-        "descripcion":""
+        "descripcion": "Misery Chastain ha muerto. Paul Sheldon la ha matado. Con alivio y hasta con alegría. Misery lo ha hecho rico. Porque Misery es la heroína que ha protagonizado sus exitosos libros. Paul quiere volver a escribir. Algo diferente, algo auténtico. Pero entonces sufre un accidente y despierta inmóvil y atravesado por el dolor en una cama que no es la suya, tampoco la de un hospital. Annie Wilkes lo ha recogido y lo ha traído a su remota casa de la montaña. La buena noticia es que Annie había sido enfermera y tiene medicamentos analgésicos. La mala es que ha sido durante mucho tiempo la fan número uno de Paul. Y cuando descubre lo que le ha hecho a Misery Chastain, no le gusta. No le gusta en absoluto. Antes, Paul Sheldon escribía para ganarse la vida. Ahora, Paul Sheldon escribe para sobrevivir"
     },
     {
         "id": 7,
@@ -61,7 +60,7 @@
         "genero": "Terror",
         "precio": 3500,
         "img": "../recursos/libros/resplandor.jpeg",
-        "descripcion":""
+        "descripcion": "Danny tenía cinco años, y a esa edad pocos niños saben que los espejos invierten las imágenes, y menos aún pueden diferenciar entre realidad y fantasía. Pero Danny tenía pruebas de que sus fantasías relacionadas con el resplandor del espejo acabarían cumpliéndose. Su madre estaba pensando en el divorcio, y su padre, obsesionado con algo muy malo, tan malo como la muerte y el suicidio, necesitaba aceptar la propuesta de cuidar aquel hotel de lujo, con más de cien habitaciones y aislado por la nieve, durante seis meses. Hasta el deshielo iban a estar solos."
     },
     {
         "id": 8,
@@ -70,7 +69,7 @@
         "genero": "Suspenso",
         "precio": 2500,
         "img": "../recursos/libros/mrMercedes.jpeg",
-        "descripcion":""
+        "descripcion": "Justo antes del amanecer, en una decadente ciudad americana, cientos de parados esperan la apertura de la oficina de empleo para reclamar uno de los mil puestos de trabajo que se han anunciado. Han hecho cola durante toda la noche. De pronto, invisible hasta que lo tienen prácticamente encima, un Mercedes surge de la fría niebla de la madrugada. Su conductor atropella y aplasta a todos los que encuentra a su alcance. Acto seguido, el coche da marcha atrás y vuelve a arremeter contra ellos. El asesino huye dejando atrás ocho muertos y quince heridos. Meses después, Bill Hodges, un policía jubilado que sigue obsesionado con este caso sin resolver, recibe una carta anónima de alguien que se declara culpable de la masacre. Brady Hartsfield vive con su madre alcohólica en la casa donde nació. Disfrutó tanto de aquella sensación de muerte debajo de los neumáticos del Mercedes que ahora quiere recuperarla."
     },
     {
         "id": 9,
@@ -79,7 +78,7 @@
         "genero": "Fantasia",
         "precio": 2500,
         "img": "../recursos/libros/harryPotterPrisionero.jpg",
-        "descripcion":""
+        "descripcion": "Harry aguarda con impaciencia el inicio del tercer curso en el Colegio Hogwarts de Magia y Hechicería. Tras haber cumplido trece años, solo y lejos de sus amigos de Hogwarts, Harry se pelea con su bigotuda tía Marge, a la que convierte en globo, y debe huir en un autobús mágico. Mientras tanto, de la prisión de Azkaban se ha escapado un terrible villano, Sirius Black, un asesino en serie con poderes mágicos que fue cómplice de lord Voldemort y que parece dispuesto a eliminar a Harry del mapa. Y por si esto fuera poco, Harry debe enfrentarse también a unos terribles monstruos, los dementores, seres abominables capaces de robarles la felicidad a los magos y de borrar todo recuerdo hermoso de aquellos que osan mirarlos. Lo que ninguno de estos malvados personajes sabe es que Harry, con la ayuda de sus fieles amigos Ron y Hermione, es capaz de todo y mucho más."
     },
     {
         "id": 10,
@@ -88,6 +87,6 @@
         "genero": "Fantasia",
         "precio": 2500,
         "img": "../recursos/libros/harryPotterFenix.jpg",
-        "descripcion":""
+        "descripcion": "Las tediosas vacaciones de verano en casa de sus tíos todavía no han acabado y Harry se encuentra más inquieto que nunca. Apenas ha tenido noticias de Ron y Hermione, y presiente que algo extraño está sucediendo en Hogwarts. En efecto, cuando por fin comienza otro curso en el famoso colegio de magia y hechicería, sus temores se vuelven realidad. El Ministerio de Magia niega que Voldemort haya regresado y ha iniciado una campaña de desprestigio contra Harry y Dumbledore, para lo cual ha asignado a la horrible profesora Dolores Umbridge la tarea de vigilar todos sus movimientos. Así pues, además de sentirse solo e incomprendido, Harry sospecha que Voldemort puede adivinar sus pensamientos, e intuye que el temible mago trata de apoderarse de un objeto secreto que le permitiría recuperar su poder destructivo."
     }
 ]

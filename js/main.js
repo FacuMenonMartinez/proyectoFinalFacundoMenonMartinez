@@ -1,4 +1,3 @@
-let carrito = []
 
 // Generador de tarjetas
 let divOfertas=document.getElementById("novedades");
@@ -28,40 +27,13 @@ fetch(`./js/productos.json`)
                 divOfertas.append(tarjeta);
 
         // // Botones de la tarjeta
+        let botonVerMas = document.getElementById(`verMas${novedad.id}`);
+        botonVerMas.addEventListener("click", () => { verMas(novedad.nombre, novedad.descripcion, novedad.precio, novedad.img, ) });
+
         let botonAgregarCarrito = document.getElementById(`agregarCarrito${novedad.id}`);
         botonAgregarCarrito.addEventListener("click",()=>{agregarCarrito (productos, novedad.id)});
-            }else{
-            };
+            }
         })
         
     });
-
-// Funcion para evento del carrito
-const agregarCarrito = (productos, seleccionador) =>{
-    let libroSeleccionado = productos.find(item=>item.id===seleccionador);
-    carrito.push(libroSeleccionado);
-
-    sessionStorage.setItem("carrito", JSON.stringify(carrito));
-
-    console.log("Producto agregado al carrito");
-};
-
-
-const mantenerCarrito=()=>{
-    let carritoStorage = JSON.parse(sessionStorage.getItem("carrito"));
-// Recorro el storage en caso que haya y vuelvo a pushear los productos que ya estan al carrito
-// para que no se sobreescriba en caso que siga agregando productos
- if(carritoStorage){
-    carritoStorage.forEach(item=>carrito.push(item));
- }
-
-}
-
-mantenerCarrito();
-
-
-
-
-
-
 
