@@ -1,16 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="https://img.icons8.com/3d-fluency/94/owl.png">
-<!-- Bootstrap -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
-integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-<!-- CSS -->
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <!-- Toastify -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+
+    <!-- CSS -->
     <link rel="stylesheet" href="../css/style.css">
     <title>Libros || El Bibliotecario</title>
 </head>
+
 <body>
     <header>
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
@@ -43,7 +48,7 @@ integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUU
 
                     </ul>
                     <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-cart-fill"
-                        viewBox="0 0 16 16">
+                        viewBox="0 0 16 16" id="botonCarrito">
                         <path
                             d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
                     </svg>
@@ -53,25 +58,34 @@ integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUU
     </header>
     <main>
         <div class="productos" id="contenedorProductos">
-
         </div>
+        <div id="carritoDiv"></div>
     </main>
     <footer>
         <div class="footerIzq">
             <h4>El bibliotecario</h4>
             <h5>Diseño y desarrollo por Facundo Menon Martinez</h5>
-          </div>
-          <section class="redes">
+        </div>
+        <section class="redes">
             <h5> Mis redes</h5>
-              <a href="https://www.linkedin.com/in/facundo-menon-martinez-870947258/" target="_blank"><img src="../recursos/footer/linkedin1.png" alt="Icono de Linkedin" class="imgRedes"></a>
-              <a href="https://github.com/FacuMenonMartinez?tab=repositories" target="_blank"><img src="../recursos/footer/github1.png" alt="Icono de Github" class="imgRedes"></a>
-              <a href="https://www.instagram.com/facumenonmartinez/" target="_blank"><img src="../recursos/footer/instagram.png" alt="Icono de instagram" class="imgRedes"></a>          
-            </section>
+            <a href="https://www.linkedin.com/in/facundo-menon-martinez-870947258/" target="_blank"><img
+                    src="../recursos/footer/linkedin1.png" alt="Icono de Linkedin" class="imgRedes"></a>
+            <a href="https://github.com/FacuMenonMartinez?tab=repositories" target="_blank"><img
+                    src="../recursos/footer/github1.png" alt="Icono de Github" class="imgRedes"></a>
+            <a href="https://www.instagram.com/facumenonmartinez/" target="_blank"><img
+                    src="../recursos/footer/instagram.png" alt="Icono de instagram" class="imgRedes"></a>
+        </section>
     </footer>
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
     <!-- SweetAlert -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- Toastify -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <!-- Carrito -->
     <script src="../js/carrito-y-tarjetas.js"></script>
     <!-- JS -->
     <script src="../js/libros.js"></script>
 </body>
+
 </html>

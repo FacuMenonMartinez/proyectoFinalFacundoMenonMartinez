@@ -149,12 +149,32 @@ fetch(`./productos.json`)
     // Funcion para evento del carrito
 const agregarCarrito = (producto, seleccionador) =>{
     let libroSeleccionado = producto.find(item=>item.id===seleccionador);
-    carrito.push(libroSeleccionado);
+    carrito1.push(libroSeleccionado);
 
-    sessionStorage.setItem("carrito", JSON.stringify(carrito));
+    // sessionStorage.setItem("carrito", JSON.stringify(carrito1));
+    toastify();
+
+
 
     console.log("Producto agregado al carrito");
 };
+
+
+
+// Toastify({
+//     text: "This is a toast",
+//     duration: 3000,
+//     destination: "https://github.com/apvarun/toastify-js",
+//     newWindow: true,
+//     close: true,
+//     gravity: "top", // `top` or `bottom`
+//     position: "left", // `left`, `center` or `right`
+//     stopOnFocus: true, // Prevents dismissing of toast on hover
+//     style: {
+//       background: "linear-gradient(to right, #00b09b, #96c93d)",
+//     },
+//     onClick: function(){} // Callback after click
+//   }).showToast();
 
 // function verMas(titulo, descripcion, precio, portada,) {
 //         Swal.fire({
