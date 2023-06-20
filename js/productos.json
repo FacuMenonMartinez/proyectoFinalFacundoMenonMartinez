@@ -6,7 +6,6 @@
         "genero": "Clasico",
         "precio": 1500,
         "img": "../recursos/libros/islaTesoro.jpg",
-        "imgIndex": "./recursos.ibros/islaTesoro.jpg",
         "descripcion": "Un viejo pirata llega a la posada que atiende Jim Hawkins y su madre. Más o menos al mis tiempo muere el padre de Jim y el misterioso pirata, quien deja en un baúl el mapa de un tesoro escondido en una isla. Este hecho fue fundamental en la vida de Jim, ya que decidió hacerse a la mar junto a un controvertido grupo de marienros con el objetivo de encontrar el tesoro del misterioso mapa. El grupo vivirá incontables aventuras, entre ellas un motín a bordo que complica completamente los planes iniciales. El joven Jim deberá descubrir solo cuáles son las caras del bien y cuáles las del mal entre sus compañeros de viaje. Estas vivencias lo harán vivir el pasaje de la inocencia a la adultez a bordo de este barco que lo llevará a la isla del tesoro."
     },
     {
