@@ -16,7 +16,7 @@ fetch(`./js/productos.json`)
                 let tarjeta = document.createElement("div");
                 tarjeta.className ="tarjeta"
                 tarjeta.innerHTML = `
-                        <img class="imgLibro" src="${novedad.img}"
+                        <img class="imgLibro" src="${novedad.imgIndex}"
                             alt="Imagen de portada de ${novedad.nombre}">
                         <h4>${novedad.nombre}</h4>
                         <b>$${novedad.precio}</b>
