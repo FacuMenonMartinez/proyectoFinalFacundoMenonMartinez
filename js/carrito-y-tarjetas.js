@@ -22,6 +22,7 @@ const agregarCarrito = (producto, seleccionador) =>{
 // 1 Llamo al boton del carrito y al contenedor
 let botonMostrarCarrito = document.getElementById("botonCarrito");
 let carritoContenedor=document.getElementById("carritoDiv");
+let claseOriginalCarritoContenedor = carritoContenedor.className;
 
 
 botonMostrarCarrito.addEventListener("click", mostrarCarrito);
@@ -83,6 +84,7 @@ if(carritoSessionStorage){
 
 // Genero el alert donde se va a mostrar el carrito
 function mostrarCarritoConProductos (datos){
+    carritoContenedor.classList.remove("carritoDiv");
     Swal.fire({
         title: 'Carrito',
         html: datos,
@@ -92,7 +94,10 @@ function mostrarCarritoConProductos (datos){
         // Estilo
         confirmButtonColor:"#252323",
         color: '#252323',
-        background: 'F5F1ED'
+        background: 'F5F1ED',
+        onAfterClose: function(){
+            carritoContenedor.classList.add("carritoDiv");
+        }
     })
 }
 

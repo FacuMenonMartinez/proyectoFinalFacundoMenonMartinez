@@ -26,6 +26,9 @@
 .botonCarrito:hover {
   cursor: pointer; }
 
+.carritoDiv {
+  display: none; }
+
 .botonEliminar {
   margin-bottom: 1rem; }
 
