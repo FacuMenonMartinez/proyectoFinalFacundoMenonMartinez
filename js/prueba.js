@@ -117,47 +117,47 @@
 // boton.addEventListener("click", cambiar);
 
 // Renderizacion de libros en su propio html
-let contenedorLibros = document.getElementById("contenedorProductos");
-let carrito1 = [];
+// let contenedorLibros = document.getElementById("contenedorProductos");
+// let carrito1 = [];
 
 // Traigo los productos del JSON y los muestro como en el main del inicio
-fetch(`./productos.json`)
-    .then((response) => response.json())
-    .then((libros) => {
-        libros.forEach(producto => {
-            let tarjeta = document.createElement("div");
-            tarjeta.className = "tarjeta producto"
-            tarjeta.innerHTML = `
-                        <img class="imgLibro" src="${producto.img}"
-                            alt="Imagen de portada de ${producto.nombre}">
-                        <h4>${producto.nombre}</h4>
-                        <b>$${producto.precio}</b>
-                        <div class="botonesTarjeta">
-                        <button id="verMas${producto.id}">Ver más</button>
-                            <button id="agregarCarrito${producto.id}">Agregar al carrito</button>
-                        </div>
-            `
-            contenedorLibros.append(tarjeta);
-            let botonVerMas = document.getElementById(`verMas${producto.id}`);
-            botonVerMas.addEventListener("click", () => { verMas(producto.nombre, producto.descripcion, producto.precio, producto.img, ) });
+// fetch(`./productos.json`)
+//     .then((response) => response.json())
+//     .then((libros) => {
+//         libros.forEach(producto => {
+//             let tarjeta = document.createElement("div");
+//             tarjeta.className = "tarjeta producto"
+//             tarjeta.innerHTML = `
+//                         <img class="imgLibro" src="${producto.img}"
+//                             alt="Imagen de portada de ${producto.nombre}">
+//                         <h4>${producto.nombre}</h4>
+//                         <b>$${producto.precio}</b>
+//                         <div class="botonesTarjeta">
+//                         <button id="verMas${producto.id}">Ver más</button>
+//                             <button id="agregarCarrito${producto.id}">Agregar al carrito</button>
+//                         </div>
+//             `
+//             contenedorLibros.append(tarjeta);
+//             let botonVerMas = document.getElementById(`verMas${producto.id}`);
+//             botonVerMas.addEventListener("click", () => { verMas(producto.nombre, producto.descripcion, producto.precio, producto.img, ) });
             
-            let agregarCarritoProducto = document.getElementById(`agregarCarrito${producto.id}`);
-            agregarCarritoProducto.addEventListener("click", () => { agregarCarrito (libros, producto.id)} );
-        }) 
-    })
+//             let agregarCarritoProducto = document.getElementById(`agregarCarrito${producto.id}`);
+//             agregarCarritoProducto.addEventListener("click", () => { agregarCarrito (libros, producto.id)} );
+//         }) 
+//     })
 
-    // Funcion para evento del carrito
-const agregarCarrito = (producto, seleccionador) =>{
-    let libroSeleccionado = producto.find(item=>item.id===seleccionador);
-    carrito1.push(libroSeleccionado);
+//     // Funcion para evento del carrito
+// const agregarCarrito = (producto, seleccionador) =>{
+//     let libroSeleccionado = producto.find(item=>item.id===seleccionador);
+//     carrito1.push(libroSeleccionado);
 
-    // sessionStorage.setItem("carrito", JSON.stringify(carrito1));
-    toastify();
+//     // sessionStorage.setItem("carrito", JSON.stringify(carrito1));
+//     toastify();
 
 
 
-    console.log("Producto agregado al carrito");
-};
+//     console.log("Producto agregado al carrito");
+// };
 
 
 
@@ -194,14 +194,24 @@ const agregarCarrito = (producto, seleccionador) =>{
 //     })
 // }
 
-const mantenerCarrito=()=>{
-    let carritoStorage = JSON.parse(sessionStorage.getItem("carrito"));
-// Recorro el storage en caso que haya y vuelvo a pushear los productos que ya estan al carrito
-// para que no se sobreescriba en caso que siga agregando productos
- if(carritoStorage){
-    carritoStorage.forEach(item=>carrito.push(item));
- }
+// const mantenerCarrito=()=>{
+//     let carritoStorage = JSON.parse(sessionStorage.getItem("carrito"));
+// // Recorro el storage en caso que haya y vuelvo a pushear los productos que ya estan al carrito
+// // para que no se sobreescriba en caso que siga agregando productos
+//  if(carritoStorage){
+//     carritoStorage.forEach(item=>carrito.push(item));
+//  }
 
-}
+// }
 
-mantenerCarrito();
+// mantenerCarrito();
+
+let clientesCreados=[];
+
+// class GeneradoraUsuarios {
+//     constructor (usuario, contraseña){
+//         this.usuario = usuario,
+//         this.contraseña = contraseña
+//     }
+// }
+
