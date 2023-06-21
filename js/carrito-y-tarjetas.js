@@ -4,6 +4,7 @@ let carrito=[];
 
 
 // Funcion de agregar al carrito
+// Evento del boton en main y libros
 const agregarCarrito = (producto, seleccionador) =>{
 
     let libroSeleccionado = producto.find(item=>item.id===seleccionador);
@@ -24,7 +25,7 @@ let botonMostrarCarrito = document.getElementById("botonCarrito");
 let carritoContenedor=document.getElementById("carritoDiv");
 let claseOriginalCarritoContenedor = carritoContenedor.className;
 
-
+// Ver Carrito
 botonMostrarCarrito.addEventListener("click", mostrarCarrito);
 
 
@@ -126,8 +127,6 @@ total.innerHTML=`
 carritoContenedor.append(total);
 
 
-
-
 //----------------- Mantener el carrito en el Session Storage
 const mantenerCarrito=()=>{
     let carritoStorage = JSON.parse(sessionStorage.getItem("carrito"));
@@ -159,12 +158,13 @@ function alertaToastify (){
 
 
 //---------------- VER MAS
+// El evento del boton esta en libros y main
 // Parametros para hacerlo personalizado del libro con la base de datos
-function verMas(titulo, descripcion, precio, portada,) {
+function verMas(titulo, descripcion, portada,) {
     Swal.fire({
     //Elementos de la alerta 
     title: titulo,
-    html: descripcion + '<br><br>' + '$' + precio,
+    html: descripcion,
     imageUrl: portada,
     showCloseButton: true,
     showConfirmButton: false,

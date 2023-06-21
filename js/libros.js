@@ -20,7 +20,7 @@ fetch(`../js/productos.json`)
         `
         contenedorLibros.append(tarjeta);
         let botonVerMas = document.getElementById(`verMas${producto.id}`);
-        botonVerMas.addEventListener("click", () => { verMas(producto.nombre, producto.descripcion, producto.precio, producto.img, ) });
+        botonVerMas.addEventListener("click", () => { verMas(producto.nombre, producto.descripcion, producto.img, ) });
 
         let agregarCarritoProducto = document.getElementById(`agregarCarrito${producto.id}`);
         agregarCarritoProducto.addEventListener("click", () => { agregarCarrito (libros, producto.id)} );

@@ -6,6 +6,8 @@
 
 @import'./carrito.scss';
 
+@import './formularios.scss';
+
 // Inicio
 body{
     background-color: $blanco;
@@ -109,6 +111,22 @@ body{
             box-shadow: 0px 0px 5px $negro;
         }
     }
+}
+
+.tarjeta:hover{
+transform:scale(1.2);
+transition: all 0.3s;}
+
+
+// VER MAS
+div:where(.swal2-container).swal2-center>.swal2-popup {
+    width: 60vw!important;
+    background: $blanco;
+}
+img:where(.swal2-image) {
+    border: 3px solid $marron-oscuro;
+    box-shadow: 0px 0px 5px $negro;
+    border-radius: 2vw;
 }
 
 footer{

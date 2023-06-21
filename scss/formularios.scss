@@ -1,0 +1,54 @@
+.formularios{
+    width: 95%;
+    margin: auto;
+    margin-bottom: 1vh;
+    margin-top: 1vh;
+    display: flex;
+}
+
+.contenido{
+    width: 50%;
+}
+
+.imagenesForm{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    img{
+        margin-bottom: 1vh;
+        width: 35vh;
+        border-radius: 3vw;
+        border: 5px solid $marron-oscuro;
+    }
+    .imgRegistrarse{
+        max-height: 23vh;
+    }
+}
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    margin-left: 2vw;
+    .formImput{
+        margin-bottom: 3vh;
+        height: 7vh;
+        border-radius: 0.5vw;
+        box-shadow: 0px 0px 5px $marron-oscuro;
+        background-color: $marron-claro;
+        color: $negro;
+        font-weight: bold;
+        font-size: 1.5rem;
+        border: 1px solid $gris;
+        padding-left: 1vw;
+    }
+    .botonImput{
+        background-color: $marron-oscuro;
+        color: $blanco;
+        border-radius: 0.5vw;
+        height: 7vh;
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+
+}

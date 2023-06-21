@@ -15,22 +15,33 @@ formulario.addEventListener("submit", (e) => {
     let contraseña = contraseñaIngresada.toUpperCase();
     let idUsuarios = usuarios.length + 1 
 
-    let usuarioNuevo = new GeneradoraUsuarios(usuarioMayuscula, contraseña, idUsuarios);
-    usuarios.push(usuarioNuevo);
+    if(usuarioIngresado === "" || contraseñaIngresada === ""){
+        Swal.fire({
+            position: 'center',
+            icon: 'warning',
+            title: ' Por favor, completá todos los datos',
+            showConfirmButton: false,
+            timer: 1500
+          })
+    }else{
+        let usuarioNuevo = new GeneradoraUsuarios(usuarioMayuscula, contraseña, idUsuarios);
+        usuarios.push(usuarioNuevo);
+    
+        console.log(usuarios);
+        localStorage.setItem("usuarios", JSON.stringify(usuarios));
+    
+        Swal.fire({
+            position: 'center',
+            icon: 'success',
+            title: 'Usuario Creado',
+            text:'Serás redireccionado al inicio',
+            showConfirmButton: false,
+            timer: 1500
+          })
+          
+        setTimeout(()=>{ location.href="../index.html"}, "2000");
+    }
 
-    console.log(usuarios);
-    localStorage.setItem("usuarios", JSON.stringify(usuarios));
-
-    Swal.fire({
-        position: 'center',
-        icon: 'success',
-        title: 'Usuario Creado',
-        text:'Serás redireccionado al inicio',
-        showConfirmButton: false,
-        timer: 1500
-      })
-      
-    setTimeout(()=>{ location.href="../index.html"}, "2000");
 
 }
 )

@@ -38,6 +38,52 @@ div:where(.swal2-container) div:where(.swal2-popup) {
 div:where(.swal2-container) div:where(.swal2-popup) {
   width: 35em; }
 
+.formularios {
+  width: 95%;
+  margin: auto;
+  margin-bottom: 1vh;
+  margin-top: 1vh;
+  display: flex; }
+
+.contenido {
+  width: 50%; }
+
+.imagenesForm {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .imagenesForm img {
+    margin-bottom: 1vh;
+    width: 35vh;
+    border-radius: 3vw;
+    border: 5px solid #a99985; }
+  .imagenesForm .imgRegistrarse {
+    max-height: 23vh; }
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  margin-left: 2vw; }
+  .formulario .formImput {
+    margin-bottom: 3vh;
+    height: 7vh;
+    border-radius: 0.5vw;
+    box-shadow: 0px 0px 5px #a99985;
+    background-color: #dad2bc;
+    color: #252323;
+    font-weight: bold;
+    font-size: 1.5rem;
+    border: 1px solid #70798c;
+    padding-left: 1vw; }
+  .formulario .botonImput {
+    background-color: #a99985;
+    color: #f5f1ed;
+    border-radius: 0.5vw;
+    height: 7vh;
+    font-size: 1.5rem;
+    font-weight: bold; }
+
 body {
   background-color: #f5f1ed;
   font-family: "Rubik", sans-serif !important; }
@@ -120,6 +166,19 @@ body {
       border-radius: 2vw;
       border: none;
       box-shadow: 0px 0px 5px #252323; }
+
+.tarjeta:hover {
+  transform: scale(1.2);
+  transition: all 0.3s; }
+
+div:where(.swal2-container).swal2-center > .swal2-popup {
+  width: 60vw !important;
+  background: #f5f1ed; }
+
+img:where(.swal2-image) {
+  border: 3px solid #a99985;
+  box-shadow: 0px 0px 5px #252323;
+  border-radius: 2vw; }
 
 footer {
   background-color: #252323;
