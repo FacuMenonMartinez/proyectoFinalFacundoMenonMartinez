@@ -29,7 +29,7 @@ fetch(`./js/productos.json`)
         // // Botones de la tarjeta
         // El codigo de los botones se ve en carrito-y-tarjetas
         let botonVerMas = document.getElementById(`verMas${novedad.id}`);
-        botonVerMas.addEventListener("click", () => { verMas(novedad.nombre, novedad.descripcion,novedad.img, ) });
+        botonVerMas.addEventListener("click", () => { verMas(novedad.nombre, novedad.descripcion,novedad.imgIndex) });
 
         let botonAgregarCarrito = document.getElementById(`agregarCarrito${novedad.id}`);
         botonAgregarCarrito.addEventListener("click",()=>{agregarCarrito (productos, novedad.id)});
